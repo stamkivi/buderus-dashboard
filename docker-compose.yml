@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  buderus-dashboard:
+    build: .
+    container_name: buderus-dashboard
+    ports:
+      - "3000:3000"
+    environment:
+      - KM200_HOST=${KM200_HOST:-192.168.5.77}
+      - KM200_GATEWAY_PASSWORD=${KM200_GATEWAY_PASSWORD}
+      - KM200_PRIVATE_PASSWORD=${KM200_PRIVATE_PASSWORD}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    network_mode: host  # Use host network to access KM200 on local network

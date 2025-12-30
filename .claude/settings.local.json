@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(arp:*)",
+      "Bash(for:*)",
+      "Bash(do echo -n \"Checking $ip... \")",
+      "Bash(timeout 2 curl:*)",
+      "Bash(done)",
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "Bash(node:*)",
+      "Bash(curl:*)",
+      "Bash(python3:*)",
+      "Bash(cat:*)",
+      "Bash(pip3 install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(open http://localhost:5173)",
+      "Bash(chmod +x capture-km200-traffic.sh analyze-km200-traffic.py)",
+      "Bash(sudo ./capture-km200-traffic.sh:*)",
+      "Bash(ls:*)",
+      "Bash(tcpdump:*)",
+      "Bash(pip3 search:*)",
+      "Bash(pip3 list:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(timeout 10 node:*)",
+      "WebFetch(domain:km200.andreashahn.info)",
+      "Bash(npm start)",
+      "Bash(json_pp:*)",
+      "Bash(sqlite3:*)",
+      "Bash(column -t -s '|':*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
