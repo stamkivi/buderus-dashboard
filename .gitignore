@@ -62,3 +62,6 @@ coverage/
 *.jpg
 *.png
 IMG_*.jpg
+
+# Per-machine Claude Code permissions
+.claude/settings.local.json
